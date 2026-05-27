@@ -22,15 +22,9 @@
   </div>
 </nav>
 
-<!-- ═══ HERO — YouTube Video ═══ -->
+<!-- ═══ HERO — Static image hero ═══ -->
 <div class="hero-video-wrap" style="min-height:640px;">
-  <iframe class="hero-video"
-    src="https://www.youtube.com/embed/IKca_1yL-l8?autoplay=1&mute=1&loop=1&playlist=IKca_1yL-l8&controls=0&showinfo=0&rel=0&modestbranding=1&start=5"
-    frameborder="0"
-    allow="autoplay; encrypted-media"
-    allowfullscreen
-    style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:177.78vh;height:100%;min-width:100%;min-height:56.25vw;border:none;opacity:0.4;z-index:0;">
-  </iframe>
+  <img class="hero-video" src="images/dell/hero-xps-copilot.jpg" alt="Dell XPS 2026" style="opacity:0.5; object-fit:cover;">
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <span class="hero-eyebrow">Dell Brand Store on Amazon</span>
@@ -52,7 +46,7 @@
       </div>
       <div class="feature-text">
         <h4>Ultra-thin &amp; Light</h4>
-        <p>XPS 14 at just 14.6mm — thinner than ever before</p>
+        <p>XPS 14 at just 14.6mm — the thinnest XPS ever built</p>
       </div>
     </div>
     <div class="feature-item">
@@ -61,7 +55,7 @@
       </div>
       <div class="feature-text">
         <h4>AI-Powered Performance</h4>
-        <p>Intel Core Ultra with on-device AI for Copilot+</p>
+        <p>Intel Core Ultra with on-device NPU for Copilot+ features</p>
       </div>
     </div>
     <div class="feature-item">
@@ -69,8 +63,8 @@
         <svg viewBox="0 0 24 24"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
       </div>
       <div class="feature-text">
-        <h4>All-Day Battery</h4>
-        <p>Up to 40+ hours on XPS — industry-leading runtime</p>
+        <h4>Up to 40 Hours Battery</h4>
+        <p>Local video playback on XPS — more than a full workday</p>
       </div>
     </div>
   </div>
@@ -87,48 +81,34 @@
     </div>
     <div class="cat-grid">
       <a href="laptops.html" class="cat-tile">
-        <img class="cat-tile-img"
-          src="https://i.dell.com/is/image/DellContent/content/dam/documents-and-videos/dv2/pan-dell/en/product-launch/laptops-and-2n1s/dell-s-laptops/ds14260-ds16260-laptops/site-banners/family/2601g0157-gl-pd-site-dell-ds14260-ds16260-1610x906.jpg?fmt=pjpg&wid=480&hei=360&resMode=sharp2"
-          alt="Dell Laptops" loading="lazy">
+        <img class="cat-tile-img" src="images/dell/laptops-dell-s.jpg" alt="Dell Laptops" loading="lazy">
         <span class="cat-label">Laptops</span>
       </a>
       <a href="gaming.html" class="cat-tile">
-        <img class="cat-tile-img"
-          src="https://i.dell.com/is/image/DellContent/content/dam/documents-and-videos/dv2/pan-dell/en/product-launch/laptops-and-2n1s/alienware-laptops/alienware-15-da15260-da15265/site-banners/da15260-intel/2601g0144-0067-gl-cs-co-da15260-mb2-5060-site-banner-2560x1066.jpg?fmt=pjpg&wid=480&hei=360&resMode=sharp2"
-          alt="Alienware Gaming" loading="lazy">
+        <img class="cat-tile-img" src="images/dell/hero-alienware.jpg" alt="Alienware Gaming" loading="lazy">
         <span class="cat-label">Gaming</span>
       </a>
       <a href="monitors.html" class="cat-tile">
-        <img class="cat-tile-img"
-          src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/en/tech-refresh-dell-ls-db16250-se2726hgs-km7321w-uhp-2560x1066.jpg?fmt=pjpg&wid=480&hei=360&resMode=sharp2"
-          alt="Dell Monitors" loading="lazy">
+        <img class="cat-tile-img" src="images/dell/hero-tech-refresh.jpg" alt="Dell Monitors" loading="lazy">
         <span class="cat-label">Monitors</span>
       </a>
       <a href="desktops.html" class="cat-tile">
-        <div class="cat-tile-img-placeholder">
-          <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-        </div>
+        <img class="cat-tile-img" src="images/dell/lifestyle-business.jpg" alt="Dell Desktops" loading="lazy">
         <span class="cat-label">Desktops</span>
       </a>
     </div>
-    <div class="cat-grid" style="margin-top:16px; grid-template-columns: repeat(4,1fr);">
-      <a href="accessories.html" class="cat-tile" style="grid-column: span 2;">
-        <img class="cat-tile-img"
-          src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/en/my-account-or-dell-premier/uhp-premier-module-pa14250-1200x675.jpg?fmt=pjpg&wid=700&hei=280&resMode=sharp2"
-          alt="Dell Accessories" loading="lazy" style="aspect-ratio:5/2;">
-        <span class="cat-label">Accessories &amp; Peripherals</span>
-      </a>
-      <a href="laptops.html" class="cat-tile">
-        <div class="cat-tile-img-placeholder">
-          <svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+    <div style="margin-top:16px;">
+      <a href="accessories.html" class="cat-tile" style="border-radius:16px; overflow:hidden; display:block; position:relative; min-height:140px; background:var(--brand-dark); text-decoration:none;">
+        <img src="images/dell/lifestyle-business.jpg" alt="Dell Accessories" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.45;">
+        <div style="position:absolute;inset:0;background:linear-gradient(90deg,var(--brand-dark) 30%,transparent 100%);"></div>
+        <div style="position:relative;z-index:2;padding:40px 32px;display:flex;align-items:center;gap:24px;">
+          <div>
+            <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.6);margin-bottom:6px;">Accessories &amp; Peripherals</div>
+            <h3 style="color:#fff;font-size:1.3rem;margin-bottom:6px;">Docks, Keyboards, Bags &amp; More</h3>
+            <p style="color:rgba(255,255,255,0.65);font-size:0.88rem;">One-cable Thunderbolt 4 docks, wireless Premier keyboards, UltraSharp webcams</p>
+          </div>
+          <span class="btn-pill-blue" style="flex-shrink:0;">See Products</span>
         </div>
-        <span class="cat-label">Business PCs</span>
-      </a>
-      <a href="gaming.html" class="cat-tile">
-        <div class="cat-tile-img-placeholder">
-          <svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M6 6h12M6 10h12M6 14h12"/></svg>
-        </div>
-        <span class="cat-label">Gaming Desktops</span>
       </a>
     </div>
   </div>
@@ -143,30 +123,24 @@
       <div class="divider"></div>
     </div>
     <div class="split-grid">
-      <!-- XPS -->
       <div class="split-tile">
-        <img class="split-tile-img"
-          src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/na/heroes/us-ca-bigbets-homepage-desktop-site-banner-2560x1066-db14250t-copilot.jpg?fmt=pjpg&wid=800&hei=600&resMode=sharp2"
-          alt="XPS 14 laptop" loading="lazy">
+        <img class="split-tile-img" src="images/dell/hero-xps-copilot.jpg" alt="XPS 14 laptop" loading="lazy">
         <div class="split-tile-overlay"></div>
         <div class="split-tile-content">
           <span class="eyebrow">XPS Series</span>
           <h3>XPS 14 &amp; XPS 16</h3>
-          <p>CNC aluminum, 14.6mm, 27–40hr battery. The premium laptop, reimagined for 2026.</p>
-          <a href="laptops.html" class="split-tile-pill">See XPS Laptops</a>
+          <p>CNC aluminum, 14.6mm, up to 40hr battery. The premium laptop, reimagined for 2026.</p>
+          <a href="laptops.html" class="split-tile-pill">See Products</a>
         </div>
       </div>
-      <!-- Alienware -->
       <div class="split-tile">
-        <img class="split-tile-img"
-          src="https://i.dell.com/is/image/DellContent/content/dam/documents-and-videos/dv2/pan-dell/en/product-launch/laptops-and-2n1s/alienware-laptops/alienware-15-da15260-da15265/site-banners/da15260-intel/2601g0144-0067-gl-cs-co-da15260-mb2-5060-site-banner-2560x1066.jpg?fmt=pjpg&wid=800&hei=600&resMode=sharp2"
-          alt="Alienware 2026 gaming laptop" loading="lazy">
+        <img class="split-tile-img" src="images/dell/hero-alienware.jpg" alt="Alienware 2026 gaming laptop" loading="lazy">
         <div class="split-tile-overlay"></div>
         <div class="split-tile-content">
           <span class="eyebrow">Alienware</span>
           <h3>Next-Gen Gaming</h3>
-          <p>Anti-glare OLED, Intel Core Ultra 200HX, and Alienware's widest lineup yet.</p>
-          <a href="gaming.html" class="split-tile-pill">Shop Alienware</a>
+          <p>Anti-glare OLED, Intel Core Ultra 200HX, and a broader Alienware lineup than ever before.</p>
+          <a href="gaming.html" class="split-tile-pill">See Products</a>
         </div>
       </div>
     </div>
@@ -177,15 +151,15 @@
 <div class="stats-bar">
   <div class="stats-inner">
     <div class="stat-item">
-      <span class="stat-num">40+</span>
-      <span class="stat-label">Hours battery — XPS</span>
+      <span class="stat-num">40hr</span>
+      <span class="stat-label">Battery life on XPS 16</span>
     </div>
     <div class="stat-item">
       <span class="stat-num">14.6mm</span>
-      <span class="stat-label">Thin — thinnest XPS ever</span>
+      <span class="stat-label">XPS 14 thickness</span>
     </div>
     <div class="stat-item">
-      <span class="stat-num">40yr</span>
+      <span class="stat-num">42yr</span>
       <span class="stat-label">Dell innovation legacy</span>
     </div>
     <div class="stat-item">
@@ -195,7 +169,7 @@
   </div>
 </div>
 
-<!-- ═══ FEATURED PRODUCTS — TOP PICKS ═══ -->
+<!-- ═══ FEATURED PRODUCTS ═══ -->
 <section class="section section-alt">
   <div class="container">
     <div class="section-title">
@@ -204,58 +178,50 @@
       <div class="divider"></div>
     </div>
     <div class="product-grid">
-      <!-- XPS 14 -->
       <div class="hk-card">
         <div class="hk-card-img">
-          <img src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/na/heroes/us-ca-bigbets-homepage-desktop-site-banner-2560x1066-db14250t-copilot.jpg?fmt=pjpg&wid=400&hei=300&resMode=sharp2"
-            alt="Dell XPS 14 Laptop" loading="lazy">
+          <img src="images/dell/hero-xps-copilot.jpg" alt="Dell XPS 14 Laptop" loading="lazy">
         </div>
         <div class="hk-card-body">
           <span class="hk-card-eyebrow">XPS Series</span>
           <div class="hk-card-title">Dell XPS 14 (2026)</div>
-          <div class="hk-card-sub">Intel Core Ultra, 14.6mm thin, 27hr battery, CNC aluminum</div>
+          <div class="hk-card-sub">Intel Core Ultra, 14.6mm thin, up to 27hr streaming, CNC aluminum</div>
           <div class="hk-card-price">From $1,399 <span>Free shipping</span></div>
           <span class="hk-card-buy">Add to Cart</span>
         </div>
       </div>
-      <!-- Alienware 16 -->
       <div class="hk-card">
         <div class="hk-card-img">
-          <img src="https://i.dell.com/is/image/DellContent/content/dam/documents-and-videos/dv2/pan-dell/en/product-launch/laptops-and-2n1s/alienware-laptops/alienware-15-da15260-da15265/site-banners/da15260-intel/2601g0144-0067-gl-cs-co-da15260-mb2-5060-site-banner-2560x1066.jpg?fmt=pjpg&wid=400&hei=300&resMode=sharp2"
-            alt="Alienware 16 Area-51" loading="lazy">
+          <img src="images/dell/hero-alienware.jpg" alt="Alienware 16 Area-51" loading="lazy">
         </div>
         <div class="hk-card-body">
           <span class="hk-card-eyebrow">Alienware Gaming</span>
           <div class="hk-card-title">Alienware 16 Area-51</div>
-          <div class="hk-card-sub">Anti-glare OLED, Intel Core Ultra 200HX, GeForce RTX</div>
+          <div class="hk-card-sub">Anti-glare QD-OLED, Intel Core Ultra 200HX, GeForce RTX 5090</div>
           <div class="hk-card-price">From $2,199 <span>Free shipping</span></div>
           <span class="hk-card-buy">Add to Cart</span>
         </div>
       </div>
-      <!-- Dell S-Series Monitor -->
       <div class="hk-card">
         <div class="hk-card-img">
-          <img src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/en/tech-refresh-dell-ls-db16250-se2726hgs-km7321w-uhp-2560x1066.jpg?fmt=pjpg&wid=400&hei=300&resMode=sharp2"
-            alt="Dell UltraSharp Monitor" loading="lazy">
+          <img src="images/dell/hero-tech-refresh.jpg" alt="Dell UltraSharp Monitor" loading="lazy">
         </div>
         <div class="hk-card-body">
           <span class="hk-card-eyebrow">Monitors</span>
           <div class="hk-card-title">Dell UltraSharp 27" 4K</div>
-          <div class="hk-card-sub">IPS Black, USB-C 90W, factory color calibrated</div>
+          <div class="hk-card-sub">IPS Black, USB-C 90W, factory color calibrated, 99% sRGB</div>
           <div class="hk-card-price">From $549 <span>Free shipping</span></div>
           <span class="hk-card-buy">Add to Cart</span>
         </div>
       </div>
-      <!-- Inspiron 16 -->
       <div class="hk-card">
         <div class="hk-card-img">
-          <img src="https://i.dell.com/is/image/DellContent/content/dam/documents-and-videos/dv2/pan-dell/en/product-launch/laptops-and-2n1s/dell-s-laptops/ds14260-ds16260-laptops/site-banners/family/2601g0157-gl-pd-site-dell-ds14260-ds16260-1610x906.jpg?fmt=pjpg&wid=400&hei=300&resMode=sharp2"
-            alt="Dell Inspiron 16 Laptop" loading="lazy">
+          <img src="images/dell/laptops-dell-s.jpg" alt="Dell Inspiron 16 Laptop" loading="lazy">
         </div>
         <div class="hk-card-body">
           <span class="hk-card-eyebrow">Inspiron</span>
           <div class="hk-card-title">Dell Inspiron 16 (2026)</div>
-          <div class="hk-card-sub">16" FHD+, Intel Core 7, up to 32GB RAM, everyday powerhouse</div>
+          <div class="hk-card-sub">16" FHD+, Intel Core 7, up to 32GB RAM, slim everyday laptop</div>
           <div class="hk-card-price">From $699 <span>Free shipping</span></div>
           <span class="hk-card-buy">Add to Cart</span>
         </div>
@@ -264,7 +230,7 @@
   </div>
 </section>
 
-<!-- ═══ USE CASE SPLIT — PERSONAL + BUSINESS ═══ -->
+<!-- ═══ USE CASE SPLIT ═══ -->
 <section class="section">
   <div class="container">
     <div class="section-title">
@@ -273,30 +239,24 @@
       <div class="divider"></div>
     </div>
     <div class="split-grid">
-      <!-- Personal / Student -->
-      <div class="split-tile light-tile" style="background:var(--brand-light);">
-        <img class="split-tile-img"
-          src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/en/my-account-or-dell-premier/uhp-my-account-adobestock-224952319-1200x675.jpg?fmt=pjpg&wid=700&hei=520&resMode=sharp2"
-          alt="Student using Dell XPS" loading="lazy">
-        <div class="split-tile-overlay" style="background:linear-gradient(0deg,rgba(232,241,251,0.97) 0%,rgba(232,241,251,0.55) 60%,transparent 100%);"></div>
+      <div class="split-tile">
+        <img class="split-tile-img" src="images/dell/lifestyle-xps-student.jpg" alt="Student using Dell XPS" loading="lazy">
+        <div class="split-tile-overlay" style="background:linear-gradient(0deg,rgba(13,33,85,0.9) 0%,rgba(13,33,85,0.3) 55%,transparent 100%);"></div>
         <div class="split-tile-content">
-          <span class="eyebrow" style="color:var(--brand-blue);">Personal &amp; Student</span>
-          <h3 style="color:var(--brand-dark);">XPS &amp; Inspiron</h3>
-          <p style="color:var(--text-muted);">Ultra-thin, long-lasting, and powerful — perfect for students, creators, and everyday users.</p>
-          <a href="laptops.html" class="split-tile-pill">Shop Personal Laptops</a>
+          <span class="eyebrow">Personal &amp; Student</span>
+          <h3>XPS &amp; Inspiron</h3>
+          <p>Ultra-thin, long-lasting, and powerful — perfect for students, creators, and everyday users.</p>
+          <a href="laptops.html" class="split-tile-pill">See Products</a>
         </div>
       </div>
-      <!-- Business -->
       <div class="split-tile">
-        <img class="split-tile-img"
-          src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/en/my-account-or-dell-premier/uhp-premier-module-pa14250-1200x675.jpg?fmt=pjpg&wid=700&hei=520&resMode=sharp2"
-          alt="Business professional with Dell laptop" loading="lazy">
+        <img class="split-tile-img" src="images/dell/lifestyle-business.jpg" alt="Business professional with Dell laptop" loading="lazy">
         <div class="split-tile-overlay"></div>
         <div class="split-tile-content">
           <span class="eyebrow">Business &amp; Enterprise</span>
           <h3>Latitude &amp; Dell Pro</h3>
-          <p>Enterprise-grade reliability, Intel vPro, and Dell ProSupport — built for the modern workforce.</p>
-          <a href="laptops.html" class="split-tile-pill">Shop Business PCs</a>
+          <p>Intel vPro security, enterprise manageability, and Dell ProSupport — for the modern workforce.</p>
+          <a href="laptops.html" class="split-tile-pill">See Products</a>
         </div>
       </div>
     </div>
@@ -314,7 +274,7 @@
     </div>
     <div class="industry-grid">
       <a href="laptops.html" class="industry-tile">
-        <img class="industry-tile-img" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/page/uber/b2l-wellcome-sanger-institute-2880x1620.jpg?fmt=pjpg&wid=600&hei=400&resMode=sharp2" alt="Healthcare" loading="lazy">
+        <img class="industry-tile-img" src="images/dell/lifestyle-enterprise.jpg" alt="Healthcare" loading="lazy">
         <div class="industry-tile-overlay"></div>
         <div class="industry-tile-content">
           <h4>Healthcare</h4>
@@ -322,7 +282,7 @@
         </div>
       </a>
       <a href="desktops.html" class="industry-tile">
-        <img class="industry-tile-img" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/en/my-account-or-dell-premier/uhp-premier-module-pa14250-1200x675.jpg?fmt=pjpg&wid=600&hei=400&resMode=sharp2" alt="Education" loading="lazy">
+        <img class="industry-tile-img" src="images/dell/lifestyle-xps-student.jpg" alt="Education" loading="lazy">
         <div class="industry-tile-overlay"></div>
         <div class="industry-tile-content">
           <h4>Education</h4>
@@ -330,7 +290,7 @@
         </div>
       </a>
       <a href="desktops.html" class="industry-tile">
-        <img class="industry-tile-img" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/na/heroes/us-ca-bigbets-homepage-desktop-site-banner-2560x1066-db14250t-copilot.jpg?fmt=pjpg&wid=600&hei=400&resMode=sharp2" alt="Finance" loading="lazy">
+        <img class="industry-tile-img" src="images/dell/lifestyle-business.jpg" alt="Finance" loading="lazy">
         <div class="industry-tile-overlay"></div>
         <div class="industry-tile-content">
           <h4>Finance &amp; Legal</h4>
@@ -338,7 +298,7 @@
         </div>
       </a>
       <a href="laptops.html" class="industry-tile">
-        <img class="industry-tile-img" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/en/my-account-or-dell-premier/uhp-my-account-adobestock-224952319-1200x675.jpg?fmt=pjpg&wid=600&hei=400&resMode=sharp2" alt="Creative" loading="lazy">
+        <img class="industry-tile-img" src="images/dell/lifestyle-xps-student.jpg" alt="Creative" loading="lazy">
         <div class="industry-tile-overlay"></div>
         <div class="industry-tile-content">
           <h4>Creative Professionals</h4>
@@ -346,15 +306,15 @@
         </div>
       </a>
       <a href="gaming.html" class="industry-tile">
-        <img class="industry-tile-img" src="https://i.dell.com/is/image/DellContent/content/dam/documents-and-videos/dv2/pan-dell/en/product-launch/laptops-and-2n1s/alienware-laptops/alienware-15-da15260-da15265/site-banners/da15260-intel/2601g0144-0067-gl-cs-co-da15260-mb2-5060-site-banner-2560x1066.jpg?fmt=pjpg&wid=600&hei=400&resMode=sharp2" alt="Gaming" loading="lazy">
+        <img class="industry-tile-img" src="images/dell/hero-alienware.jpg" alt="Gaming" loading="lazy">
         <div class="industry-tile-overlay"></div>
         <div class="industry-tile-content">
           <h4>Gaming &amp; Esports</h4>
-          <p>Alienware OLED panels, top-tier GPUs, and tournament-ready performance</p>
+          <p>Alienware OLED displays, top-tier GPUs, and tournament-ready performance</p>
         </div>
       </a>
       <a href="desktops.html" class="industry-tile">
-        <img class="industry-tile-img" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/page-specific/dell-homepage/en/tech-refresh-dell-ls-db16250-se2726hgs-km7321w-uhp-2560x1066.jpg?fmt=pjpg&wid=600&hei=400&resMode=sharp2" alt="SMB" loading="lazy">
+        <img class="industry-tile-img" src="images/dell/lifestyle-enterprise.jpg" alt="Small Business" loading="lazy">
         <div class="industry-tile-overlay"></div>
         <div class="industry-tile-content">
           <h4>Small Business</h4>
@@ -368,7 +328,7 @@
 <!-- ═══ CTA BANNER ═══ -->
 <div class="cta-banner">
   <h2>Upgrade Your Setup Today</h2>
-  <p>Shop Dell's full lineup on Amazon with Prime shipping, easy returns, and exclusive bundle savings.</p>
+  <p>Shop Dell's full lineup on Amazon with Prime shipping, easy returns, and Dell manufacturer warranty.</p>
   <div class="cta-banner-btns">
     <a href="laptops.html" class="btn-brand">Shop Laptops</a>
     <a href="gaming.html" class="btn-brand" style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);">Shop Gaming</a>

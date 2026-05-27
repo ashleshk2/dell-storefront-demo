@@ -555,6 +555,10 @@ p  { margin-bottom: 0; line-height: 1.65; }
   .amz-mobile-drawer.open { display: flex; }
   .amz-mobile-drawer:not(.open) { display: none; }
   .section-hero-content { padding: 56px 32px; }
+  /* Mobile sub-nav: scrollable */
+  .brand-subnav-inner { overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .brand-subnav-inner::-webkit-scrollbar { display: none; }
+  .brand-subnav-search { display: none; }
 }
 @media (max-width: 600px) {
   .cat-grid { grid-template-columns: repeat(2, 1fr); }
