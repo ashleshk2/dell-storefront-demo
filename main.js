@@ -1,4 +1,4 @@
-/* CyberPower Amazon Brand Store — Main JS */
+/* Dell Amazon Brand Store — Main JS v2 */
 
 async function loadPartials() {
   try {
@@ -78,6 +78,127 @@ function initSmoothScroll() {
   });
 }
 
+/* Scroll-reveal: Intersection Observer
+   Applies .section-fade + staggered delays to major sections
+   ============================================================ */
+function initScrollReveal() {
+  // Tag all major sections and content blocks for reveal
+  const revealTargets = [
+    '.section',
+    '.stats-bar',
+    '.cta-banner',
+    '.trust-strip',
+    '.feature-strip',
+  ];
+
+  // Individual card / tile stagger
+  const staggerTargets = [
+    { selector: '.hk-card',       delayStep: 80 },
+    { selector: '.cat-tile',      delayStep: 70 },
+    { selector: '.split-tile',    delayStep: 100 },
+    { selector: '.industry-tile', delayStep: 80 },
+    { selector: '.stat-item',     delayStep: 80 },
+    { selector: '.trust-item',    delayStep: 60 },
+  ];
+
+  // Apply .section-fade to top-level reveal targets
+  revealTargets.forEach(function(sel) {
+    document.querySelectorAll(sel).forEach(function(el) {
+      if (!el.classList.contains('section-fade')) {
+        el.classList.add('section-fade');
+      }
+    });
+  });
+
+  // Apply staggered delays to grid children — but ONLY if not already inside
+  // a parent that will be revealed (avoid double-animation)
+  staggerTargets.forEach(function(cfg) {
+    document.querySelectorAll(cfg.selector).forEach(function(el, idx) {
+      el.classList.add('section-fade');
+      el.style.transitionDelay = (idx % 4) * cfg.delayStep + 'ms';
+    });
+  });
+
+  // Intersection observer — threshold 0.08 so cards trigger before fully visible
+  const observer = new IntersectionObserver(
+    function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          // Once revealed, unobserve to save resources
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.08, rootMargin: '0px 0px -40px 0px' }
+  );
+
+  document.querySelectorAll('.section-fade').forEach(function(el) {
+    observer.observe(el);
+  });
+}
+
+/* Stats counter animation — animate stat numbers on reveal
+   ============================================================ */
+function initStatCounters() {
+  document.querySelectorAll('.stat-num').forEach(function(el) {
+    el.classList.add('section-fade');
+  });
+}
+
+/* Hero image subtle parallax on scroll
+   ============================================================ */
+function initHeroParallax() {
+  var heroImg = document.querySelector('.hero-video');
+  if (!heroImg) return;
+  var hero = document.querySelector('.hero-video-wrap');
+  if (!hero) return;
+
+  var ticking = false;
+  window.addEventListener('scroll', function() {
+    if (!ticking) {
+      window.requestAnimationFrame(function() {
+        var scrollY = window.scrollY;
+        var heroHeight = hero.offsetHeight;
+        if (scrollY < heroHeight) {
+          var pct = scrollY / heroHeight;
+          heroImg.style.transform = 'translate(-50%, calc(-50% + ' + (pct * 40) + 'px))';
+        }
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }, { passive: true });
+}
+
+/* Add to Cart micro-interaction
+   ============================================================ */
+function initCartButtons() {
+  document.querySelectorAll('.hk-card-buy, .btn-cart').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      var orig = this.textContent;
+      this.textContent = 'Added!';
+      this.style.background = '#4CAF50';
+      this.style.borderColor = '#43A047';
+      this.style.color = '#fff';
+      var self = this;
+      setTimeout(function() {
+        self.textContent = orig;
+        self.style.background = '';
+        self.style.borderColor = '';
+        self.style.color = '';
+      }, 1400);
+    });
+  });
+}
+
 document.addEventListener('DOMContentLoaded', function() {
+  // Mark JS as active so CSS scroll-reveal rules engage
+  document.documentElement.classList.add('js-ready');
   loadPartials();
+  initScrollReveal();
+  initStatCounters();
+  initHeroParallax();
+  initCartButtons();
 });
